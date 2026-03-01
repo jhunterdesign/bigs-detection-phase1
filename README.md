@@ -38,20 +38,15 @@ Detection Logic:
 ---
 
 ## Repository Structure
-
-bigs-detection-phase1/
-│
-├── index.html # Landing page
-├── apply.html # Simulated job application form
-├── about.html # Company information
-├── missions.html # Narrative context
-├── app.js # Detection & telemetry logic
-├── styles.css # UI styling
-├── telemetry-analysis/ # Detection notes & findings
-├── bigs-bbq-honeypot-project.md # Case study notes
-
-
+```
+bigs-detection-phase1
+├── src/      # Application frontend & detection logic
+├── docs/     # Phase findings & telemetry analysis
+├── assets/   # Static resources
+└── README.md # Project overview
+```
 ---
+
 
 ## Phase 1 Findings
 
