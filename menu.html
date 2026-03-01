@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Big’s BBQ & Smokehouse</title>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Explore the Big’s BBQ & Smokehouse menu featuring brisket, ribs, sides, and desserts.">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="images/logo/bigs-bbq-emblem-yell.png" alt="Big’s BBQ & Smokehouse logo" class="logo" />
+      
+    </div>
+
+    <nav aria-label="Primary" class="primary-nav">
+      <a href="index.html">Careers</a>
+      <a href="about.html">About</a>
+      <a href="menu.html" aria-current="page">Menu</a>
+      <a href="missions.html">Mission</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO IMAGE -->
+<section class="menu-hero">
+  <div class="menu-hero-overlay">
+    <div class="wrap">
+      <h2>Our Menu</h2>
+      <p class="sub">Slow smoked meats, classic sides, and house-made desserts.</p>
+    </div>
+  </div>
+</section>
+
+<main class="wrap results" id="main">
+
+  <div class="results-head">
+    <h3>BBQ Favorites</h3>
+    <p class="muted small">This is a portfolio demo page. Do not enter personal information.</p>
+  </div>
+
+  <!-- MENU LIST -->
+  <div class="grid" style="margin-top:1.5rem;">
+
+    <a href="menu.html?item=rodeo-steak" class="menu-card">
+      <img src="images/food-items/bigs-rodeo-steak.jpeg" alt="Rodeo Steak" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Rodeo Steak</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=baby-back-ribs" class="menu-card">
+      <img src="images/food-items/002-bigs-baby-backs.jpeg" alt="Big’s Baby Back Ribs" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big’s Baby Back Ribs</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=big-luther" class="menu-card">
+      <img src="images/food-items/003_bigs-luther.jpg" alt="Big Luther Burger" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big Luther</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=bbq-wings" class="menu-card">
+      <img src="images/food-items/004_bigs_bbq_chk.jpeg" alt="BBQ Wings" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big’s BBQ Wings</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=chicken-waffles" class="menu-card">
+      <img src="images/food-items/005-ch-w.png" alt="Chicken and Waffles" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big’s Chicken &amp; Waffles</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=parmesan-fries" class="menu-card">
+      <img src="images/food-items/006-bigs_fries.jpg" alt="Parmesan Fries" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Parmesan Fries</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=big-ol-shake" class="menu-card">
+      <img src="images/food-items/008-bigs-shake.jpg" alt="Big Ol’ Shake" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big Ol’ Shake</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=big-ol-slice" class="menu-card">
+      <img src="images/food-items/008-bigs-slice.jpeg" alt="Big Ol’ Slice" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big Ol’ Slice</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=cheesecake" class="menu-card">
+      <img src="images/food-items/009-bigs-cheesecake.jpg" alt="Cheesecake" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big Ol’ Cheesecake</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=chocolate-explosion" class="menu-card">
+      <img src="images/food-items/010-bigs-brownie-explosion.jpg" alt="Chocolate Explosion Cake" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Big Ol’ Explosion</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+    <a href="menu.html?item=cold-drinks" class="menu-card">
+      <img src="images/food-items/011-bigs-drinks.jpg" alt="Cold Drinks" class="menu-card-img" />
+      <div class="menu-card-content"><h4>Cold Drinks</h4></div>
+      <div class="menu-card-arrow">›</div>
+    </a>
+
+  </div>
+</main>
+
+<!-- ITEM OVERLAY (modal) -->
+<div class="item-overlay" id="itemOverlay" hidden>
+  <div class="item-overlay-card">
+
+    <button class="overlay-close" id="closeOverlay" type="button" aria-label="Close">✕</button>
+
+    <img id="overlayItemHeroImg" class="item-hero-img" alt="Menu item image" />
+
+    <h2 id="overlayItemTitle"></h2>
+
+    <p class="item-description" id="overlayItemDescription"></p>
+
+    <button class="btn-secondary" type="button">Nutritional Facts ▶</button>
+
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuData = {
+    "rodeo-steak": {
+      title: "Rodeo Steak",
+      img: "images/food-items/bigs-rodeo-steak.jpeg",
+      desc: "The smoky and savory Rodeo Steak is the result of a harmonious symphony of bold southern flavor blend spiced with caramelized onions and crispy bacon bits and our proprietary Big’s BBQ sauce."
+    },
+    "baby-back-ribs": {
+      title: "Big’s Baby Back Ribs",
+      img: "images/food-items/002-bigs-baby-backs.jpeg",
+      desc: "Slow smoked ribs glazed in house BBQ sauce, tender and juicy."
+    },
+    "big-luther": {
+      title: "Big Luther",
+      img: "images/food-items/003_bigs-luther.jpg",
+      desc: "A legendary burger stacked high with crispy bacon and cheese."
+    },
+    "bbq-wings": {
+      title: "Big’s BBQ Wings",
+      img: "images/food-items/004_bigs_bbq_chk.jpeg",
+      desc: "Crispy wings tossed in smoky BBQ sauce with a spicy southern kick."
+    },
+    "chicken-waffles": {
+      title: "Big’s Chicken & Waffles",
+      img: "images/food-items/005-ch-w.png",
+      desc: "Golden waffles paired with crispy fried chicken and drizzled with a signature BBQ syrup."
+    },
+    "parmesan-fries": {
+      title: "Parmesan Fries",
+      img: "images/food-items/006-bigs_fries.jpg",
+      desc: "Crispy seasoned fries tossed in parmesan and herbs with a house dipping sauce."
+    },
+    "big-ol-shake": {
+      title: "Big Ol’ Shake",
+      img: "images/food-items/008-bigs-shake.jpg",
+      desc: "A thick, creamy milkshake topped with whipped cream and a drizzle."
+    },
+    "big-ol-slice": {
+      title: "Big Ol’ Slice",
+      img: "images/food-items/008-bigs-slice.jpeg",
+      desc: "A bold, zesty slice of homemade dessert—southern style."
+    },
+    "cheesecake": {
+      title: "Big Ol’ Cheesecake",
+      img: "images/food-items/009-bigs-cheesecake.jpg",
+      desc: "Creamy cheesecake with a buttery crust and a smooth finish."
+    },
+    "chocolate-explosion": {
+      title: "Big Ol’ Explosion",
+      img: "images/food-items/010-bigs-brownie-explosion.jpg",
+      desc: "Chocolate brownie stacked with fudge, caramel, and ice cream vibes."
+    },
+    "cold-drinks": {
+      title: "Cold Drinks",
+      img: "images/food-items/011-bigs-drinks.jpg",
+      desc: "Ice-cold beverages to complement your BBQ feast."
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const item = params.get("item");
+
+  const overlay = document.getElementById("itemOverlay");
+  const closeBtn = document.getElementById("closeOverlay");
+
+  const heroImg = document.getElementById("overlayItemHeroImg");
+  const titleEl = document.getElementById("overlayItemTitle");
+  const descEl = document.getElementById("overlayItemDescription");
+
+  function openOverlay(data){
+    titleEl.textContent = data.title;
+    heroImg.src = data.img;
+    heroImg.alt = data.title;
+    descEl.textContent = data.desc;
+
+    overlay.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeOverlay(){
+    overlay.hidden = true;
+    document.body.style.overflow = "auto";
+    history.pushState({}, "", "menu.html");
+  }
+
+  if(item && menuData[item]){
+    openOverlay(menuData[item]);
+  }
+
+  closeBtn.addEventListener("click", closeOverlay);
+
+  // click outside card closes overlay
+  overlay.addEventListener("click", (e) => {
+    if(e.target === overlay) closeOverlay();
+  });
+
+  // Esc key closes overlay
+  document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape" && !overlay.hidden) closeOverlay();
+  });
+});
+</script>
+
+<script src="js/security-logger.js"></script>
+
+</body>
+</html>

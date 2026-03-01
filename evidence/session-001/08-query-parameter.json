@@ -1,0 +1,46 @@
+{
+    "schema": "hcs.web_event.v1",
+    "app": "bigs-bbq-honeypot",
+    "env": "dev",
+    "version": "0.1.0",
+    "event_type": "query_params",
+    "ts": "2026-01-30T01:42:34.367Z",
+    "session_id": "zyxi5dnh",
+    "page": {
+        "url": "http://localhost:8000/index.html?role=%27%20OR%201=1%20--",
+        "path": "/index.html",
+        "referrer": null
+    },
+    "client": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "ua_flags": [],
+        "language": "en-US",
+        "timezone": "America/New_York"
+    },
+    "query": {
+        "role": {
+            "redacted": false,
+            "len": 11,
+            "hash": "b4bd59c8",
+            "score": 4
+        }
+    },
+    "detection": {
+        "flagged": true,
+        "score": 4,
+        "hits": [
+            {
+                "rule_id": "sqli_boolean",
+                "severity": "med",
+                "note": "Possible SQLi: boolean tautology",
+                "field": "query.role"
+            },
+            {
+                "rule_id": "sqli_comment",
+                "severity": "med",
+                "note": "Possible SQLi: comment tokens",
+                "field": "query.role"
+            }
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Careers at Big’s BBQ & Smokehouse — Atlanta</title>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/favicon.png">
+
+<!-- Open Graph / Social Preview -->
+<meta property="og:title" content="Big’s BBQ & Smokehouse Careers" />
+<meta property="og:description" content="Explore roles in Atlanta, Decatur, and Marietta. Chat with Biggie, our virtual hiring assistant." />
+<meta property="og:image" content="https://huntercloudsec.dev/images/og/og-careers-biggie.png
+" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Big’s BBQ & Smokehouse Careers" />
+<meta name="twitter:description" content="Explore roles in Atlanta, Decatur, and Marietta." />
+<meta name="twitter:image" content="https://yourdomain.com/images/og/bigs-og.png" />
+
+
+<!-- Optional but pro -->
+<meta name="theme-color" content="#7b1212">
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Search Big’s BBQ & Smokehouse jobs in Atlanta. Apply to Crew, Line Cook, and Shift Manager roles. Chat with Biggie, our hiring assistant (demo).">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap header-inner">
+      <div class="brand">
+  <img src="images/logo/bigs-bbq-emblem-yell.png" alt="Big’s BBQ & Smokehouse logo" class="logo" />
+  
+</div>
+
+      <nav aria-label="Primary" class="primary-nav">
+  <a href="index.html" aria-current="page">Careers</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="missions.html">Mission</a>
+</nav>
+
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h2 id="hero-title">Careers in Metro Atlanta</h2>
+        <p class="sub">Find roles in Atlanta, Decatur, and Marietta. Quick apply. Interview (mock) scheduling.</p>
+
+        <form id="searchForm" class="search" role="search" aria-label="Job search">
+          <div class="field">
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option value="">Any role</option>
+              <option value="Crew">Crew</option>
+              <option value="Line Cook">Line Cook</option>
+              <option value="Shift Manager">Shift Manager</option>
+              <option value="Cleaner">Cleaner</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="zip">City / ZIP</label>
+            <input id="zip" name="zip" inputmode="numeric" pattern="[0-9]*" placeholder="30303, Decatur, Marietta" />
+          </div>
+
+          <div class="field">
+            <label for="type">Availability</label>
+            <select id="type" name="type">
+              <option value="">Any</option>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Search Jobs</button>
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main id="main" class="wrap" role="main">
+    <section aria-labelledby="results-title" class="results">
+      <div class="results-head">
+        <h3 id="results-title">Available Positions</h3>
+        <a href="case-study.html" class="why-link">Why this demo exists</a>
+        <!--
+        <p class="muted">This is a portfolio demo. Do not enter real personal information.</p> -->
+      </div>
+
+   
+
+
+      <div id="jobGrid" class="grid" role="list"></div>
+
+      <template id="jobCardTemplate">
+        <article class="card" role="listitem">
+          <div class="card-body">
+            <h4 class="job-title"></h4>
+            <ul class="meta">
+              <li class="job-location"></li>
+              <li class="job-type"></li>
+              <li class="job-pay"></li>
+            </ul>
+            <p class="job-blurb"></p>
+            <div class="actions">
+              <button class="btn-secondary view-details">View details</button>
+              <button class="btn apply-btn">Apply now</button>
+            </div>
+
+
+
+            </div>
+          </div>
+        </article>
+      </template>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <p class="small muted">
+  Have questions? Chat with <strong>Biggie</strong> for help finding the right role or scheduling an interview.
+</p>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Chat Button -->
+  <button id="chatToggle"
+          class="chat-toggle"
+          aria-haspopup="dialog"
+          aria-controls="chatDrawer"
+          aria-expanded="false"
+          title="Chat with Biggie">
+    Chat with Biggie
+  </button>
+
+  
+
+  <!-- Chat Drawer -->
+  <aside id="chatDrawer"
+         class="chat-drawer"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="chatTitle"
+         aria-hidden="true">
+
+         <div class="chat-warning">
+  Simulation Environment — Do NOT enter real personal information.
+</div>
+
+    <header class="chat-header mchire-header">
+  <div class="mchire-id">
+    <img src="images/people/bigs-avatar.png" class="mchire-avatar" />
+    <span class="mchire-name">Biggie</span>
+  </div>
+
+  <img src="images/logo/bigs-bbq-emblem-001.png" class="mchire-logo" alt="Big's BBQ logo" />
+
+  <button id="chatClose" class="icon-btn">×</button>
+</header>
+
+
+
+
+    <div id="chatLog" class="chat-log" role="log" aria-live="polite" aria-relevant="additions"></div>
+
+    <form id="chatForm" class="chat-form" autocomplete="off">
+      <label class="sr-only" for="chatInput">Type a message</label>
+      <input id="chatInput" name="message" placeholder="Ask about roles, shifts, or schedule a mock interview…" />
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+    <div class="chat-notice small">
+      Session ID: <strong id="sessionId"></strong>
+</div>
+
+
+
+    <div class="chat-notice small">
+     <!-- Demo only — do not share sensitive data (SSN, DOB, banking, address). If entered, we’ll replace with placeholders.
+    </div> -->
+  </aside>
+
+
+  
+  <script src="app.js"></script>
+  <script src="js/security-logger.js"></script>
+
+
+</body>
+</html>

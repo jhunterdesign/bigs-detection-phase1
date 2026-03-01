@@ -1,0 +1,41 @@
+{
+    "schema": "hcs.web_event.v1",
+    "app": "bigs-bbq-honeypot",
+    "env": "dev",
+    "version": "0.1.0",
+    "event_type": "chat_message",
+    "ts": "2026-01-30T01:16:00.875Z",
+    "session_id": "zyxi5dnh",
+    "page": {
+        "url": "http://localhost:8000/",
+        "path": "/",
+        "referrer": null
+    },
+    "client": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "ua_flags": [],
+        "language": "en-US",
+        "timezone": "America/New_York"
+    },
+    "payload": {
+        "channel": "biggie"
+    },
+    "detection": {
+        "flagged": true,
+        "score": 4,
+        "hits": [
+            {
+                "rule_id": "sqli_boolean",
+                "severity": "med",
+                "note": "Possible SQLi: boolean tautology",
+                "field": "custom"
+            },
+            {
+                "rule_id": "sqli_comment",
+                "severity": "med",
+                "note": "Possible SQLi: comment tokens",
+                "field": "custom"
+            }
+        ]
+    }
+}

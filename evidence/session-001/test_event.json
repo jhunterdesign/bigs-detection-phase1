@@ -1,0 +1,25 @@
+{
+    "schema": "hcs.web_event.v1",
+    "app": "bigs-bbq-honeypot",
+    "env": "dev",
+    "version": "0.1.0",
+    "event_type": "page_view",
+    "ts": "2026-01-26T17:09:28.192Z",
+    "session_id": "hcs_ix35vg8q_mkuetvmv",
+    "page": {
+        "url": "http://127.0.0.1:5500/index.html",
+        "path": "/index.html",
+        "referrer": "http://127.0.0.1:5500/index.html"
+    },
+    "client": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "ua_flags": [],
+        "language": "en-US",
+        "timezone": "America/New_York"
+    },
+    "detection": {
+        "flagged": false,
+        "score": 0,
+        "hits": []
+    }
+}

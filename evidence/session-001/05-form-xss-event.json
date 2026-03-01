@@ -1,0 +1,40 @@
+{
+    "schema": "hcs.web_event.v1",
+    "app": "bigs-bbq-honeypot",
+    "env": "dev",
+    "version": "0.1.0",
+    "event_type": "input_blur",
+    "ts": "2026-01-30T00:30:51.868Z",
+    "session_id": "zyxi5dnh",
+    "page": {
+        "url": "http://localhost:8000/apply.html",
+        "path": "/apply.html",
+        "referrer": "http://localhost:8000/"
+    },
+    "client": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+        "ua_flags": [],
+        "language": "en-US",
+        "timezone": "America/New_York"
+    },
+    "input": {
+        "field": "reason",
+        "value": {
+            "redacted": false,
+            "len": 25,
+            "hash": "ee32d3a2"
+        }
+    },
+    "detection": {
+        "flagged": true,
+        "score": 3,
+        "hits": [
+            {
+                "rule_id": "xss_script_tag",
+                "severity": "high",
+                "note": "Possible XSS: <script>",
+                "field": "input.reason"
+            }
+        ]
+    }
+}
